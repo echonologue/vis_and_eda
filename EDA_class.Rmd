@@ -127,9 +127,22 @@ weather_df |>
 ```
 
 
+Violin
+
+```{r}
+weather_df |>
+  ggplot(aes(x = name, y = tmax))+
+  geom_violin()
+```
 
 
+Bridge plots...
 
+```{r}
+weather_df |>
+  ggplot(aes(y = name, x = tmax)) +
+  geom_density_ridges()
+```
 
 
 
