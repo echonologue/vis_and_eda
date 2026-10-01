@@ -145,6 +145,19 @@ weather_df |>
 ```
 
 
+## Save some of my plots 
+
+```{r}
+ggp_weather = 
+weather_df|>
+  ggplot(aes(x = date, y = tmax, color = name))+
+  geom_point(aes(size = prcp),alpha = .5) +
+  facet_grid(.~name)
+
+ggp_weather
+
+ggsave("ggp_weather.pdf", ggp_weather, width = 8, height = 5)
+```
 
 
 
