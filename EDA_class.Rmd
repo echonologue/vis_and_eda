@@ -1,7 +1,21 @@
 ---
-title: "EDA_class"
+title: "Visualization"
 output: github_document
 ---
 
 #Visualization
+
+```{r}
+library(tidyverse)
+library(ggridges)
+
+library(p8105.datasets)
+data("weather_df")
+```
+
+Now we have everything we need!
+
+```{r}
+
+```
 
